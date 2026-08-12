@@ -6,7 +6,7 @@ from .utils import group_text_box, get_image_list, calculate_md5, get_paragraph,
                    make_rotated_img_list, set_result_with_confidence,\
                    reformat_input_batched, merge_to_free
 from .config import *
-get_display = lambda text: text  # Désactive bidi (pour le français, c'est suffisant
+from bidi.algorithm import get_display
 import numpy as np
 import cv2
 import torch
